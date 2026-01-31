@@ -1,0 +1,48 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#e1f5fe', 'primaryTextColor': '#01579b', 'primaryBorderColor': '#0288d1', 'lineColor': '#0288d1', 'secondaryColor': '#fff3e0', 'tertiaryColor': '#fff'}}}%%
+flowchart TB
+    subgraph VLA["🤖 VLA Models<br/>Vision-Language-Action"]
+        direction TB
+        
+        subgraph Components["📦 Components 组件"]
+            RL["强化学习<br/>DQN, PPO, DT"]
+            PVR["预训练视觉表征<br/>CLIP, R3M, MVP"]
+            WM["世界模型<br/>Dreamer, Genie"]
+            Reasoning["推理能力<br/>Chain-of-Thought"]
+        end
+        
+        subgraph ControlPolicy["🎮 Control Policy 控制策略"]
+            NonTF["非Transformer<br/>CLIPort, BC-Z"]
+            TFBased["Transformer-based<br/>RT-1, Gato"]
+            MultiModal["多模态指令<br/>VIMA, MOO"]
+            Vision3D["3D视觉<br/>PerAct, Act3D"]
+            Diffusion["扩散策略<br/>Diffusion Policy"]
+            LargeVLA["大型VLA<br/>RT-2, OpenVLA"]
+        end
+        
+        subgraph TaskPlanner["📋 Task Planner 任务规划"]
+            Monolithic["端到端<br/>PaLM-E"]
+            
+            subgraph Modular["模块化方法"]
+                LangBased["语言驱动<br/>SayCan, Inner Monologue"]
+                CodeBased["代码驱动<br/>ProgPrompt, ChatGPT4R"]
+            end
+            
+            subgraph Grounded["⭐ Grounded 落地"]
+                TaskGround["任务落地"]
+                WorldGround["世界落地<br/>Affordance"]
+            end
+        end
+    end
+    
+    subgraph YourTopic["🎯 你的课题位置"]
+        Topic["工业机械臂<br/>模糊指令语义消歧"]
+    end
+    
+    LangBased -.->|"核心相关"| Topic
+    Grounded -.->|"直接相关"| Topic
+    MultiModal -.->|"技术支撑"| Topic
+    
+    style Topic fill:#ffcdd2,stroke:#c62828,stroke-width:3px
+    style Grounded fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style LangBased fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style MultiModal fill:#fff9c4,stroke:#f9a825,stroke-width:2px
