@@ -1,0 +1,52 @@
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Editors / IDEs =====
+.vscode/
+.idea/
+*.iml
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ===== Virtual environments =====
+.venv/
+venv/
+env/
+
+# ===== Build artifacts =====
+build/
+dist/
+*.egg-info/
+
+# ===== Logs / temp =====
+*.log
+*.tmp
+*.swp
+
+# ===== ML / experiments outputs =====
+runs/
+wandb/
+tensorboard/
+
+# ===== Large assets (usually should not be in git) =====
+data/
+dataset/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Model weights / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
