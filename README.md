@@ -1,12 +1,10 @@
-# Ambiguity-resolution-of-fuzzy-instructions-for-industrial-robotic-arms
-科研学习的记录，我用来记录我的日常的学习
+## 科研课题：Ambiguity-resolution-of-fuzzy-instructions-for-industrial-robotic-arms
+#### 科研学习的记录，我用来记录我的日常的学习
 
-### 顶刊论文笔记，三大论文笔记和文献综述笔记是用来精读的论文笔记内容
 
-## 学习规划和论文笔记:里面包含：
 
-## 1.项目的运行笔记，以及一些科研实验图片的结果
+1.论文笔记记录的是关于每一篇论文里面我所读的内容
 
-## 2.知识的学习笔记
+2.每天学习笔记，记录的是我的思考和项目的一些具体实践和结果
 
-## 3.过程中需要略读的论文笔记，其中也有记载
+## 
