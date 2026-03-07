@@ -39,6 +39,7 @@ tensorboard/
 data/
 dataset/
 datasets/
+*.pdf
 *.zip
 *.tar
 *.tar.gz

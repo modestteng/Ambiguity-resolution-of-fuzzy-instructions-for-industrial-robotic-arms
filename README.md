@@ -1,10 +1,26 @@
-## 科研课题：Ambiguity-resolution-of-fuzzy-instructions-for-industrial-robotic-arms
-#### 科研学习的记录，我用来记录我的日常的学习
+# Ambiguity Resolution of Fuzzy Instructions for Industrial Robotic Arms
 
+## Project Structure
 
+```
+my_paper_project/
+├── configs/          # Training and evaluation configs
+├── data/
+│   ├── raw/          # Raw datasets
+│   └── outputs/      # Checkpoints, logs, metrics, figures
+├── src/              # Source code
+├── experiments/      # Experiment records
+└── paper/            # Paper drafts, figures, tables
+```
 
-1.论文笔记记录的是关于每一篇论文里面我所读的内容
+## Quick Start
 
-2.每天学习笔记，记录的是我的思考和项目的一些具体实践和结果
+```bash
+pip install -r requirements.txt
 
-## 
+# Train
+python src/train.py --config configs/train.yaml
+
+# Evaluate
+python src/eval.py --config configs/eval.yaml
+```
